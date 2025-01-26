@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "ES2022", // Target modern JavaScript
+        "lib": ["DOM", "DOM.Iterable", "ES2022"], // Include browser and ES2022 types
+        "allowJs": true, // Allow JavaScript files
+        "skipLibCheck": true, // Skip type checking of .d.ts files for faster builds
+        "strict": true, // Enable all strict type-checking options
+        "forceConsistentCasingInFileNames": true, // Enforce case-sensitive imports
+        "esModuleInterop": true, // Allow default imports for CommonJS modules
+        "module": "ESNext", // Use the ESNext module system
+        "moduleResolution": "Node", // Resolve modules using Node.js-style resolution
+        "resolveJsonModule": true, // Enable importing JSON modules
+        "isolatedModules": true, // Ensure each file can be transpiled separately
+        "jsx": "preserve", // Preserve JSX syntax for Next.js
+        "incremental": true, // Enable incremental compilation for faster builds
+        "noEmit": true, // Prevent emitting compiled files
+        "paths": {
+            "@/*": ["./*"], // Base alias for shared imports
+            "@pixelverse/ui": ["lib/ui/src"], // Path alias for UI package
+            "@pixelverse/utils": ["lib/utils/src"] // Path alias for Utils package
+        },
+        "baseUrl": ".", // Set the base directory for relative imports
+        "types": ["@types/node", "@types/react"] // Include Node and React types
+    }
+}

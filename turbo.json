@@ -1,0 +1,12 @@
+{
+    "extends": ["turbo/presets"],
+    "tasks": {
+        "build": {
+            "outputs": ["dist/**"]
+        },
+        "lint": {
+            "outputs": []
+        },
+        "test": {}
+    }
+}
